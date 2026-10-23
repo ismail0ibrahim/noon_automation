@@ -1,25 +1,9 @@
 {
   "name": "noon-automation-ts",
   "version": "1.0.0",
-  "description": "Noon Egypt Automation using Playwright and TypeScript",
+  "description": "Noon Egypt task: login session, wishlist, checkout without paying, profile, delivery, search, Facebook",
   "scripts": {
-    "test": "playwright test tests/safety.spec.ts tests/audit-regression.spec.ts",
-    "test:headed": "playwright test tests/safety.spec.ts tests/audit-regression.spec.ts --headed",
-    "test:full": "node scripts/run-live.cjs",
-    "test:public": "playwright test tests/public.spec.ts",
-    "test:privacy": "node scripts/check-reporter.cjs",
-    "test:recovery": "node scripts/check-recovery.cjs",
-    "demo": "node scripts/run-verified-demo.cjs",
-    "demo:verified": "node scripts/run-verified-demo.cjs",
-    "report": "node scripts/serve-report.cjs",
-    "test:safety": "playwright test tests/safety.spec.ts",
-    "login:manual": "node scripts/manual-browser.cjs",
-    "login:capture": "node scripts/capture-session.cjs",
-    "test:session": "node scripts/run-live.cjs --session",
-    "login:search": "node scripts/manual-browser.cjs --search",
-    "typecheck": "tsc --noEmit",
-    "inspect": "node scripts/inspect-live.cjs",
-    "audit:privacy": "node scripts/audit-privacy.cjs"
+    "start": "node scripts/journey.cjs"
   },
   "engines": { "node": ">=20" },
   "devDependencies": {
